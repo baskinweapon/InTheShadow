@@ -14,10 +14,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance
     {
-        get
-        {
-            return instance;
-        }
+        get => instance;
         set {}
     }
 
@@ -31,8 +28,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else
-        {
             DestroyImmediate(this);
-        }
     }
 }
