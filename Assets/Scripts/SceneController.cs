@@ -20,11 +20,14 @@ public class SceneController : MonoBehaviour
     public int menu;
     
     private Action OnLoadMenu;
-
+    private Vector3 startPosLoadingScreen;
+    
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Canvas canvasLoadScreen;
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI pressAnyButton;
+    [SerializeField] private VisualEffect sunEffect;
+    
     
     private void Awake()
     {
@@ -37,6 +40,7 @@ public class SceneController : MonoBehaviour
             DestroyImmediate(this);
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
         DontDestroyOnLoad(loadingScreen);
+        startPosLoadingScreen = loadingScreen.transform.position;
         DontDestroyOnLoad(canvasLoadScreen.gameObject);
     }
 
@@ -63,13 +67,16 @@ public class SceneController : MonoBehaviour
 
     private void LoadingScreen(int scene_id)
     {
-        if (Camera.main != null)
+        
+        Camera _camera = Camera.main;
+        if (_camera != null)
         {
-            Camera.main.cullingMask = 1 << LayerMask.NameToLayer("LoadingScreen");
-            Camera.main.transform.position = Vector3.zero;
-            Camera.main.transform.rotation = Quaternion.identity;
-        }   
+            _camera.cullingMask = 1 << LayerMask.NameToLayer("LoadingScreen");
+            _camera.transform.position = Vector3.zero;
+            _camera.transform.rotation = Quaternion.identity;
+        }
         loadingScreen.SetActive(true);
+        loadingScreen.transform.position = startPosLoadingScreen;
         canvasLoadScreen.gameObject.SetActive(true);
         StartCoroutine(LoadAsync(scene_id));
     }

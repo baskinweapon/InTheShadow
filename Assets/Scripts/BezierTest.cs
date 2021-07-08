@@ -19,6 +19,7 @@ public class BezierTest : MonoBehaviour
 
     public void TransformToCamera()
     {
+        _multyply = speed;
         StopAllCoroutines();
         StartCoroutine(CourutineToCamera());
     }
@@ -29,12 +30,20 @@ public class BezierTest : MonoBehaviour
         StartCoroutine(CourutineToStartPosition());
     }
 
+    private float _multyply = 5f;
     IEnumerator CourutineToCamera()
     {
         while(t <= 1)
         {
             yield return null;
-            t += Time.deltaTime / speed;
+            if (t >= 0.95f)
+            {
+                t += Time.deltaTime / (speed * _multyply);
+                if (_multyply <= 10f)
+                    _multyply += 1f;
+            }
+            else
+                t += Time.deltaTime / speed;
             transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
@@ -48,14 +57,6 @@ public class BezierTest : MonoBehaviour
             transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
-    // void Update()
-    // {
-    //     if (t > 1)
-    //         return;
-    //     t += Time.deltaTime / 10f;
-    //     transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
-    //     // transform.rotation = Quaternion.LookRotation(Bezier.GetFirstDerivative(p0.position, p1.position, p2.position, p3.position, t));
-    // }
     
     private void OnDrawGizmos()
     {
