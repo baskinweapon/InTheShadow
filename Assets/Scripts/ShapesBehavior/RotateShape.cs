@@ -20,8 +20,6 @@ public class RotateShape : MonoBehaviour
         
         transform.Rotate(Vector3.up, -rotX, Space.World);
         transform.Rotate(Vector3.right, -rotY, Space.World);
-        // transform.RotateAround(Vector3.up, -rotX);
-        // transform.RotateAround(Vector3.right, -rotY);
     }
 }
 

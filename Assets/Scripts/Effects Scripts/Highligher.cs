@@ -18,11 +18,9 @@ public class Highligher : MonoBehaviour
    private void Start()
    {
       _meshRenderer = GetComponent<MeshRenderer>();
-      
-      
    }
 
-   public void EnableHighlight(bool state)
+   private void EnableHighlight(bool state)
    {
       if (_meshRenderer != null && originalMat != null && highlightedMat != null)
       {

@@ -20,15 +20,12 @@ public class SceneController : MonoBehaviour
     public int menu;
     
     private Action OnLoadMenu;
-    private Vector3 startPosLoadingScreen;
     
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Canvas canvasLoadScreen;
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI pressAnyButton;
-    [SerializeField] private VisualEffect sunEffect;
-    
-    
+
     private void Awake()
     {
         if (_instance == null)
@@ -65,6 +62,7 @@ public class SceneController : MonoBehaviour
         LoadingScreen(scene_id);
     }
 
+    private Vector3 startPosLoadingScreen;
     private void LoadingScreen(int scene_id)
     {
         

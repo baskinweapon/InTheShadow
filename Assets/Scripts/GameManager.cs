@@ -3,12 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EVENT_TYPE
-{
-    GAME_START,
-    GAME_PLAY,
-    GAME_PAUSE,
-};
 
 public class GameManager : MonoBehaviour
 {

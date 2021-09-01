@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
 
-public class BezierTest : MonoBehaviour
+public class BezierMover : MonoBehaviour
 {
     public Transform p0;
     public Transform p1;
