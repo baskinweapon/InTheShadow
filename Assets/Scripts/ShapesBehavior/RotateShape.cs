@@ -17,9 +17,9 @@ public class RotateShape : MonoBehaviour
     {
         float rotX = Input.GetAxis("Mouse X") * rotationSpeed * Mathf.Deg2Rad;
         float rotY = Input.GetAxis("Mouse Y") * rotationSpeed * Mathf.Deg2Rad;
-        
+    
         transform.Rotate(Vector3.up, -rotX, Space.World);
-        transform.Rotate(Vector3.right, -rotY, Space.World);
+        transform.Rotate(Vector3.forward, rotY, Space.World);
     }
 }
 

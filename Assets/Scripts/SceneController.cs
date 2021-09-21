@@ -68,7 +68,7 @@ public class SceneController : MonoBehaviour
         
         Camera _camera = Camera.main;
         if (_camera != null)
-        {
+        { 
             _camera.cullingMask = 1 << LayerMask.NameToLayer("LoadingScreen");
             _camera.transform.position = Vector3.zero;
             _camera.transform.rotation = Quaternion.identity;
