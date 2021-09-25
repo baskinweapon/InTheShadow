@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
     public int menu;
     
     private Action OnLoadMenu;
+    public Action OnChangeScene;
     
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Canvas canvasLoadScreen;
@@ -59,13 +60,14 @@ public class SceneController : MonoBehaviour
 
     public void LoadLevel(int scene_id)
     {
-        LoadingScreen(scene_id);
+        var id = scene_id + 2; 
+        LoadingScreen(id);
     }
 
     private Vector3 startPosLoadingScreen;
     private void LoadingScreen(int scene_id)
     {
-        
+        OnChangeScene?.Invoke();
         Camera _camera = Camera.main;
         if (_camera != null)
         { 
@@ -90,6 +92,7 @@ public class SceneController : MonoBehaviour
             slider.value = asyncLoad.progress;
             if (asyncLoad.progress >= .9f && !asyncLoad.allowSceneActivation)
             {
+                slider.value = 1;
                 StartCoroutine(PressAnyButttonAnim());
                 loadingScreen.transform.position += Vector3.back * Time.deltaTime;
                 if (Input.anyKeyDown || loadingScreen.transform.position.z < -.5f)

@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private float _gameTime;
+    
     public static GameManager Instance
     {
         get => instance;
@@ -23,5 +25,15 @@ public class GameManager : MonoBehaviour
         }
         else
             DestroyImmediate(this);
+    }
+    
+    private void Update()
+    {
+        _gameTime += Time.deltaTime;
+    }
+
+    public float GetGameTime()
+    {
+        return _gameTime;
     }
 }
