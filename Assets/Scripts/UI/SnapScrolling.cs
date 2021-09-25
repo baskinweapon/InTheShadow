@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SnapScrolling : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class SnapScrolling : MonoBehaviour
     private GameObject[] instPans;
     private Vector2[] pansPosition;
 
+    [SerializeField] private List<LevelDataScriptble> levelData;
+
     private RectTransform contentRect;
     private Vector2 contentVector;
 
@@ -41,6 +44,7 @@ public class SnapScrolling : MonoBehaviour
         for (int i = 0; i < panCount; i++)
         {
             instPans[i] = Instantiate(panPrefab, content, false);
+            instPans[i].GetComponent<ScrollPanel>().SetData(levelData[i]);
             if (i == 0) continue;
             var x = instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x +
                     panOffset;

@@ -3,27 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="655fb2c0-8090-469e-b64d-0c4fe09fc867" name="Default Changelist" comment="add menu">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlueColdMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlueColdMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/CloudsMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CloudsMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Liquid Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Liquid Material 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/---Game---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/---Game---.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SecondLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SecondLvlScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScrollPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScrollPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForElephant.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForElephant.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/Sun.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/Sun.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,20 +40,26 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../InTheShadow-main/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuStart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/RotateShape.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/OverScrollingPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelDataScriptble.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scriptble/LevelDataScriptble.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xYeoVoBDrhXMV60SGwCs36y3nK" />
@@ -117,7 +108,7 @@
       <workItem from="1630536629540" duration="6897000" />
       <workItem from="1632248750285" duration="3663000" />
       <workItem from="1632484701274" duration="997000" />
-      <workItem from="1632574761154" duration="12291000" />
+      <workItem from="1632574761154" duration="16129000" />
     </task>
     <task id="LOCAL-00001" summary="reimport project">
       <created>1630536712071</created>
@@ -133,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632251904546</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add menu">
+      <created>1632589691085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632589691085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

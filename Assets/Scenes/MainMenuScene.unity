@@ -4424,6 +4424,13 @@ MonoBehaviour:
   snapSpeed: 8
   scaleOffset: 200
   scaleSpeed: 10
+  levelData:
+  - {fileID: 11400000, guid: 5b406a0fbe6e21f49bd6cf23ac4e0ee3, type: 2}
+  - {fileID: 11400000, guid: 238839ea264555b46bbee49480064c8b, type: 2}
+  - {fileID: 11400000, guid: b4acb480626453e4bbb70bd27378925e, type: 2}
+  - {fileID: 11400000, guid: 87a1203447e09504ebbf53c0a1a0c138, type: 2}
+  - {fileID: 11400000, guid: 1e3bb4ac7d59ed54eb0d93f5b6f18e71, type: 2}
+  - {fileID: 11400000, guid: b9f08d3f370d9ff47a7647008f43f64f, type: 2}
 --- !u!114 &603185228
 MonoBehaviour:
   m_ObjectHideFlags: 0

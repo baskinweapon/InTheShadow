@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour
 
     public void MenuButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         if (_menuPanel.activeSelf)
         {
             image.sprite = menuImage;
@@ -37,6 +38,7 @@ public class Menu : MonoBehaviour
 
     public void ResumeButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         image.sprite = menuImage;
         HideAllInfoPanel();
         _menuPanel.SetActive(false);
@@ -44,12 +46,14 @@ public class Menu : MonoBehaviour
     
     public void NewGameButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         HideAllInfoPanel();
         _newGamePanel.SetActive(true);
     }
     
     public void LoadGameButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         HideAllInfoPanel();
         _loadGamePanel.SetActive(true);
         CreateLoadContent();
@@ -57,6 +61,7 @@ public class Menu : MonoBehaviour
     
     public void SettingButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         HideAllInfoPanel();
         _settinsPanel.SetActive(true);
         
@@ -64,6 +69,7 @@ public class Menu : MonoBehaviour
 
     public void QuitButton()
     {
+        AudioManager.Instance.PlayPopUpAudio();
         HideAllInfoPanel();
         _quitGamePanel.SetActive(true);
     }
@@ -92,10 +98,5 @@ public class Menu : MonoBehaviour
         _loadGamePanel.SetActive(false);
         _settinsPanel.SetActive(false);
         _quitGamePanel.SetActive(false);
-    }
-
-    public void OverButtons()
-    {
-        
     }
 }
