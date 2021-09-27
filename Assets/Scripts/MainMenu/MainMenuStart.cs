@@ -29,7 +29,7 @@ public class MainMenuStart : MonoBehaviour
 
 	public void StartLevelButtonClick()
 	{
-		AudioManager.Instance.PlayStartLEvelAudio();
+		AudioManager.Instance.PlayStartLevelAudio();
 		SceneController.instance.LoadLevel(currentLvl);
 	}
 

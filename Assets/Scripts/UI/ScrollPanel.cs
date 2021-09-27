@@ -16,10 +16,13 @@ public class ScrollPanel : MonoBehaviour
     [SerializeField] private Sprite starImage;
     [SerializeField] private Sprite yellowStarImage;
 
+    private LevelDataScriptble _levelData;
+    
     public void SetData(LevelDataScriptble levelData)
     {
+        _levelData = levelData;
         nameLevel.text = levelData.nameLevel;
-        TimeSpan time = TimeSpan.FromSeconds(levelData.time);
+        TimeSpan time = TimeSpan.FromSeconds(levelData.time); 
         timeLabel.text = time.ToString("hh':'mm':'ss");
         dificultDropDown.value = levelData.dificult;
         for (int i = 0; i < levelData.score; i++)
@@ -27,4 +30,10 @@ public class ScrollPanel : MonoBehaviour
             starImages[i].sprite = yellowStarImage;
         }
     }
+
+    public void DifficultDropBox(int state)
+    {
+        _levelData.dificult = state;
+    }
+    
 }

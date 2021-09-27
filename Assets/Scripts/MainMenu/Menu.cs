@@ -1,9 +1,14 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField]
+    private RectTransform screenCanvas;
+    
     [SerializeField] private Image image;
     [SerializeField] private Sprite menuImage;
     [SerializeField] private Sprite cancelImage;
@@ -18,18 +23,32 @@ public class Menu : MonoBehaviour
     [Header("ScrollView")]
     [SerializeField] private RectTransform _loadContent;
     [SerializeField] private GameObject panelPrefab;
+    
+    [SerializeField] private GameObject congratulationLabel;
+
+    public static Action OnFinishLevel;
+
+
+    private void Start()
+    {
+        OnFinishLevel += SeeCongratulationPanel;
+    }
 
     public void MenuButton()
     {
         AudioManager.Instance.PlayPopUpAudio();
         if (_menuPanel.activeSelf)
         {
+            AudioManager.Instance.ChangeVolume(PlayerPrefs.GetFloat("Volume"));
+            GameManager.Instance._GameState = GameState.Play;
             image.sprite = menuImage;
             HideAllInfoPanel();
             _menuPanel.SetActive(false);
         }
         else
         {
+            AudioManager.Instance.ChangeVolume(PlayerPrefs.GetFloat("Volume") - 0.2f);
+            GameManager.Instance._GameState = GameState.Pause;
             image.sprite = cancelImage;
             HideAllInfoPanel();
             _menuPanel.SetActive(true);
@@ -38,6 +57,8 @@ public class Menu : MonoBehaviour
 
     public void ResumeButton()
     {
+        AudioManager.Instance.ChangeVolume(PlayerPrefs.GetFloat("Volume"));
+        GameManager.Instance._GameState = GameState.Play;
         AudioManager.Instance.PlayPopUpAudio();
         image.sprite = menuImage;
         HideAllInfoPanel();
@@ -64,7 +85,6 @@ public class Menu : MonoBehaviour
         AudioManager.Instance.PlayPopUpAudio();
         HideAllInfoPanel();
         _settinsPanel.SetActive(true);
-        
     }
 
     public void QuitButton()
@@ -91,6 +111,12 @@ public class Menu : MonoBehaviour
             loadPanels.Add(panel);
         }
     }
+
+    private void SeeCongratulationPanel()
+    {
+        var panel = Instantiate(congratulationLabel, screenCanvas);
+        Destroy(panel, 5f);
+    }
     
     private void HideAllInfoPanel()
     {
@@ -98,5 +124,10 @@ public class Menu : MonoBehaviour
         _loadGamePanel.SetActive(false);
         _settinsPanel.SetActive(false);
         _quitGamePanel.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        OnFinishLevel -= SeeCongratulationPanel;
     }
 }

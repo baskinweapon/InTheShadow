@@ -16,7 +16,8 @@ public class SceneController : MonoBehaviour
     }
 
     private static SceneController _instance;
-    
+
+    private int level_id;
     public int menu;
     
     private Action OnLoadMenu;
@@ -60,6 +61,8 @@ public class SceneController : MonoBehaviour
 
     public void LoadLevel(int scene_id)
     {
+        level_id = scene_id;
+        GameManager.Instance.GetLevelData(scene_id);
         var id = scene_id + 2; 
         LoadingScreen(id);
     }
@@ -120,6 +123,11 @@ public class SceneController : MonoBehaviour
                 _sign = 1;
             yield return null;
         }
+    }
+
+    public int GetLevelID()
+    {
+        return level_id;
     }
     
     private void OnDestroy()

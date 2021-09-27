@@ -10,5 +10,4 @@ public class LevelDataScriptble : ScriptableObject
     public float time;
     public int dificult;
     public int score;
-
 }

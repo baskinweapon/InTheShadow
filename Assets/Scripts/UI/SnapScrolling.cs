@@ -23,9 +23,7 @@ public class SnapScrolling : MonoBehaviour
 
     private GameObject[] instPans;
     private Vector2[] pansPosition;
-
-    [SerializeField] private List<LevelDataScriptble> levelData;
-
+    
     private RectTransform contentRect;
     private Vector2 contentVector;
 
@@ -44,7 +42,7 @@ public class SnapScrolling : MonoBehaviour
         for (int i = 0; i < panCount; i++)
         {
             instPans[i] = Instantiate(panPrefab, content, false);
-            instPans[i].GetComponent<ScrollPanel>().SetData(levelData[i]);
+            instPans[i].GetComponent<ScrollPanel>().SetData(GameManager.Instance.GetLevelData(i));
             if (i == 0) continue;
             var x = instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x +
                     panOffset;
@@ -85,6 +83,8 @@ public class SnapScrolling : MonoBehaviour
 
     public void Scrolling(bool state)
     {
+        if (state)
+            AudioManager.Instance.PlaySwipeAudio();
         isScrooling = state;
     }
 }

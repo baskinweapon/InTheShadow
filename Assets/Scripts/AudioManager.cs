@@ -13,7 +13,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip _finishLevelAudio;
     [SerializeField] private AudioClip _popUpAudio;
     [SerializeField] private AudioClip _swipeAudio;
-    
+    [SerializeField] private AudioClip _winAudio;
+
+    public static Action<float> OnChangeVolume;
     
     public static AudioManager Instance
     {
@@ -43,11 +45,12 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeVolume(float volume)
     {
+        OnChangeVolume?.Invoke(volume);
         _audioSource.volume = volume;
         _cosmosSource.volume = volume;
     }
 
-    public void PlayStartLEvelAudio()
+    public void PlayStartLevelAudio()
     {
         _audioSource.PlayOneShot(_startLevelAudio);
     }
@@ -56,11 +59,17 @@ public class AudioManager : MonoBehaviour
     {
         _audioSource.PlayOneShot(_finishLevelAudio);
     }
+    
+    public void PlayWinLevelAudio()
+    {
+        _audioSource.PlayOneShot(_winAudio);
+    }
 
     public void PlayPopUpAudio()
     {
         _audioSource.PlayOneShot(_popUpAudio);
     }
+    
 
     public void PlaySwipeAudio()
     {

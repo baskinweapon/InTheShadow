@@ -7437,7 +7437,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
@@ -7536,6 +7536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa7f5dd6c7ce8a4186b59ecc0364100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screenCanvas: {fileID: 1851043192}
   image: {fileID: 1536019522}
   menuImage: {fileID: 21300000, guid: 6cbf668d786f3ca4bb59fbfa78d9c6ec, type: 3}
   cancelImage: {fileID: 21300000, guid: 63f5741254c5da648aeaa030b6d1ddf6, type: 3}
@@ -7546,6 +7547,8 @@ MonoBehaviour:
   _quitGamePanel: {fileID: 1488215589}
   _loadContent: {fileID: 1124672587}
   panelPrefab: {fileID: 3880825341275945719, guid: 83386c3e8d89f75448d4ead3724ec8c1,
+    type: 3}
+  congratulationLabel: {fileID: 8219305450093735388, guid: 4be4ceb99996e5b45a0237358e6a96bf,
     type: 3}
 --- !u!4 &1851068847
 Transform:
@@ -7628,6 +7631,53 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 1242354207}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: congratulationLabel
+      value: 
+      objectReference: {fileID: 8219305450093735388, guid: 4be4ceb99996e5b45a0237358e6a96bf,
+        type: 3}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b406a0fbe6e21f49bd6cf23ac4e0ee3,
+        type: 2}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 238839ea264555b46bbee49480064c8b,
+        type: 2}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b4acb480626453e4bbb70bd27378925e,
+        type: 2}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 87a1203447e09504ebbf53c0a1a0c138,
+        type: 2}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e3bb4ac7d59ed54eb0d93f5b6f18e71,
+        type: 2}
+    - target: {fileID: 1640984955599272889, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: levelData.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f08d3f370d9ff47a7647008f43f64f,
+        type: 2}
     - target: {fileID: 1640984955599272891, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
         type: 3}
       propertyPath: m_Name
@@ -7690,14 +7740,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
         type: 3}
+      propertyPath: _winAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: b98256c39a3af6c4ea399a7f62b64a7d, type: 3}
+    - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
       propertyPath: _popUpAudio
       value: 
       objectReference: {fileID: 8300000, guid: b9784283c963272418b4de9243ca5c46, type: 3}
     - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
         type: 3}
+      propertyPath: _swipeAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 1391be6b02d744e49bb478c7b9942a07, type: 3}
+    - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
       propertyPath: _cosmosAudio
       value: 
       objectReference: {fileID: 8300000, guid: b6908751cb1f3f14585ec0020eb3aa39, type: 3}
+    - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
+        type: 3}
+      propertyPath: _planetAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d9dd1b7aa933c8428e11537e58cea01, type: 3}
     - target: {fileID: 3245224388613035376, guid: 65b8d28ae4e0e4958b00956dcbb8a13f,
         type: 3}
       propertyPath: _cosmosSource
