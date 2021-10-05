@@ -11,29 +11,12 @@ public class BezierMover : MonoBehaviour
     public Transform p2;
     public Transform p3;
 
-    [Range(0, 1)]
-    public float t;
+    [Range(0, 1)] public float t;
 
     public float speed = 5f;
 
-    private AudioSource audioSource;
-
-
-    private void Start()
-    {
-        AudioManager.OnChangeVolume += ChangeVolume;
-        audioSource = GetComponent<AudioSource>();
-        audioSource.volume = PlayerPrefs.GetFloat("Volume");
-    }
-
-    private void ChangeVolume(float volume)
-    {
-        audioSource.volume = volume;
-    }
-
     public void TransformToCamera()
     {
-        audioSource.Play();
         _multyply = speed;
         StopAllCoroutines();
         StartCoroutine(CourutineToCamera());
@@ -41,15 +24,15 @@ public class BezierMover : MonoBehaviour
 
     public void TransformToStartPosition()
     {
-        audioSource.Pause();
         StopAllCoroutines();
         StartCoroutine(CourutineToStartPosition());
     }
 
     private float _multyply = 5f;
+
     IEnumerator CourutineToCamera()
     {
-        while(t <= 1)
+        while (t <= 1)
         {
             yield return null;
             if (t >= 0.95f)
@@ -60,6 +43,7 @@ public class BezierMover : MonoBehaviour
             }
             else
                 t += Time.deltaTime / speed;
+
             transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
@@ -73,7 +57,7 @@ public class BezierMover : MonoBehaviour
             transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
-    
+
     private void OnDrawGizmos()
     {
         int segmentNumber = 20;
@@ -86,10 +70,5 @@ public class BezierMover : MonoBehaviour
             Gizmos.DrawLine(previosePoint, point);
             previosePoint = point;
         }
-    }
-
-    private void OnDestroy()
-    {
-        AudioManager.OnChangeVolume -= ChangeVolume;
     }
 }

@@ -87,6 +87,13 @@ public class Menu : MonoBehaviour
         _settinsPanel.SetActive(true);
     }
 
+    public void MainMenuButton()
+    {
+        image.sprite = menuImage;
+        _menuPanel.SetActive(false);
+        SceneController.instance.LoadMenu();
+    }
+
     public void QuitButton()
     {
         AudioManager.Instance.PlayPopUpAudio();
