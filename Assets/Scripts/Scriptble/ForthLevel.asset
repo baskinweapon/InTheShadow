@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: ForthLevel
   m_EditorClassIdentifier: 
-  nameLevel: 
+  nameLevel: Loveum
   isOpen: 0
-  time: 1000
+  time: 31.782791
   dificult: 1
-  score: 2
+  score: 3

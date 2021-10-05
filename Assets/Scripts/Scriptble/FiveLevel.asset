@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: FiveLevel
   m_EditorClassIdentifier: 
-  nameLevel: 
+  nameLevel: Mirage
   isOpen: 0
-  time: 0
+  time: 28.715473
   dificult: 0
-  score: 0
+  score: 3

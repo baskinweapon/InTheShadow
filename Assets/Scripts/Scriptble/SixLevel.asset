@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: SixLevel
   m_EditorClassIdentifier: 
-  nameLevel: 
+  nameLevel: Void
   isOpen: 0
-  time: 0
+  time: 16.261736
   dificult: 0
-  score: 0
+  score: 3

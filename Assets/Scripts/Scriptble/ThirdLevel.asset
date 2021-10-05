@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: ThirdLevel
   m_EditorClassIdentifier: 
-  nameLevel: ThirdLEvel
+  nameLevel: Emerial
   isOpen: 0
   time: 50
   dificult: 0
