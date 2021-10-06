@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using UnityEngine.VFX;
 
 public class SceneController : MonoBehaviour
@@ -19,13 +18,13 @@ public class SceneController : MonoBehaviour
 
     private int level_id;
     public int menu;
-    
+
     private Action OnLoadMenu;
     public Action OnChangeScene;
     
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Canvas canvasLoadScreen;
-    [SerializeField] private Slider slider;
+    [SerializeField] private GameObject menuCanvas;
     [SerializeField] private TextMeshProUGUI pressAnyButton;
 
     private void Awake()
@@ -79,6 +78,8 @@ public class SceneController : MonoBehaviour
             _camera.transform.rotation = Quaternion.identity;
         }
         loadingScreen.SetActive(true);
+        menuCanvas.SetActive(false);
+        
         loadingScreen.transform.position = startPosLoadingScreen;
         canvasLoadScreen.gameObject.SetActive(true);
         StartCoroutine(LoadAsync(scene_id));
@@ -92,16 +93,15 @@ public class SceneController : MonoBehaviour
         
         while (!asyncLoad.isDone)
         {
-            slider.value = asyncLoad.progress;
             if (asyncLoad.progress >= .9f && !asyncLoad.allowSceneActivation)
             {
-                slider.value = 1;
                 StartCoroutine(PressAnyButttonAnim());
                 loadingScreen.transform.position += Vector3.back * Time.deltaTime;
                 if (Input.anyKeyDown || loadingScreen.transform.position.z < -.5f)
                 {
                     asyncLoad.allowSceneActivation = true;
                     loadingScreen.SetActive(false);
+                    menuCanvas.SetActive(true);
                     canvasLoadScreen.gameObject.SetActive(false);
                 }
             }

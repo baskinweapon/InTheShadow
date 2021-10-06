@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="655fb2c0-8090-469e-b64d-0c4fe09fc867" name="Default Changelist" comment="add 2 levels">
+    <list default="true" id="655fb2c0-8090-469e-b64d-0c4fe09fc867" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Text (TMP).controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Text (TMP).controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScrollPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScrollPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FirstLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FiveLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FiveLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SecondLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SecondLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SixLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/SixLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FirstLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FirstLevel.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FiveLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FiveLevel.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ForthLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ForthLevel.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SecondLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SecondLevel.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SixLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SixLevel.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ThirdLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ThirdLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/RotateShape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/RotateShape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +53,18 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/Assets/Scripts/Utils/BezierMover.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/Assets/Scripts/Utils/BezierMover.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/57/1371a208/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/Assets/Scripts/Utils/BezierMover.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/LeaderboardManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../InTheShadow-main/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,24 +74,25 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuStart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/OverScrollingPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelDataScriptble.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndLevel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scriptble/LevelDataScriptble.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/ShapeBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/RotateShape.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ShapesBehavior/ShapeBehavior.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xYeoVoBDrhXMV60SGwCs36y3nK" />
@@ -114,7 +143,7 @@
       <workItem from="1632248750285" duration="3663000" />
       <workItem from="1632484701274" duration="997000" />
       <workItem from="1632574761154" duration="33194000" />
-      <workItem from="1632914210071" duration="4731000" />
+      <workItem from="1632914210071" duration="19035000" />
     </task>
     <task id="LOCAL-00001" summary="reimport project">
       <created>1630536712071</created>
@@ -158,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633424595192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <created>1633425039108</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633425039108</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +233,7 @@
     <MESSAGE value="add levelData" />
     <MESSAGE value="add levels logic" />
     <MESSAGE value="add 2 levels" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2 levels" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

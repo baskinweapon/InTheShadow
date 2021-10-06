@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: SecondLevel
   m_EditorClassIdentifier: 
-  nameLevel: Alunium
-  isOpen: 0
-  time: 17.64366
+  nameLevel: TRUNK
+  isOpen: 1
+  time: 0
   dificult: 0
-  score: 3
+  score: 0

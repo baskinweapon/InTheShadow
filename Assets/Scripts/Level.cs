@@ -21,6 +21,9 @@ public class Level : MonoBehaviour
     public static Action OnFinishLevel;
     public static Action OnEnd;
     public static Action<VisualEffect, GameObject> OnMultyObjectFinish;
+    public static Action<int> OnSetDifficult;
+
+    private int difficult;
     
     private void Start()
     {
@@ -29,6 +32,8 @@ public class Level : MonoBehaviour
         OnMultyObjectFinish += MultyObjectFinish;
         _levelData = GameManager.Instance.GetLevelData(SceneController.instance.GetLevelID());
         _levelTime = 0;
+        difficult = _levelData.dificult;
+        OnSetDifficult?.Invoke(difficult);
     }
 
     private List<GameObject> visuals = new List<GameObject>();
@@ -63,6 +68,9 @@ public class Level : MonoBehaviour
         end = true;
         _levelData.time = _levelTime;
         _levelData.score = SetStars();
+        var nextLevel = GameManager.Instance.GetLevelData(SceneController.instance.GetLevelID() + 1);
+        if (nextLevel)
+            nextLevel.isOpen = true;
         StartCoroutine(ReturnToMenu());
     }
     
@@ -104,6 +112,8 @@ public class Level : MonoBehaviour
         if (GameManager.Instance._GameState == GameState.Play)
             _levelTime += Time.deltaTime;
         if (end)
+            return;
+        if (difficult != 2)
             return;
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetMouseButtonDown(0))
             SwapPositions();

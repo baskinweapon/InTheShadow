@@ -6,13 +6,14 @@ using UnityEngine.VFX;
 
 public class MainMenuStart : MonoBehaviour
 {
-	[SerializeField] private List<GameObject> planets;
+	[SerializeField] public List<GameObject> planets;
 
 	public static Action<int> OnChooseLvl;
 	
 	public int lastLvl = -1;
 	public int currentLvl = -1;
-
+	
+	
 	private void Start()
 	{
 		OnChooseLvl += SetLevelOnButtonClick;

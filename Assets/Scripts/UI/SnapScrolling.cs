@@ -8,6 +8,8 @@ public class SnapScrolling : MonoBehaviour
 {
     [SerializeField] private GameObject panPrefab;
     [SerializeField] private Transform content;
+    [SerializeField] private Button startLevelButton;
+    [SerializeField] private MainMenuStart mainMenuStart;
 
     [Range(1, 50)]
     public int panCount;
@@ -31,8 +33,13 @@ public class SnapScrolling : MonoBehaviour
     
     private int selectedID;
     private bool isScrooling;
-    
-    void Start()
+
+    private void OnEnable()
+    {
+        Settings.OnOpenAllLevels += Start;
+    }
+
+    public void Start()
     {
         instPans = new GameObject[panCount];
         pansPosition = new Vector2[panCount];
@@ -42,7 +49,18 @@ public class SnapScrolling : MonoBehaviour
         for (int i = 0; i < panCount; i++)
         {
             instPans[i] = Instantiate(panPrefab, content, false);
-            instPans[i].GetComponent<ScrollPanel>().SetData(GameManager.Instance.GetLevelData(i));
+            var scroolPanel = instPans[i].GetComponent<ScrollPanel>();
+            scroolPanel.SetData(GameManager.Instance.GetLevelData(i));
+
+            if (!scroolPanel.IsOpenLevel())
+            {
+                scroolPanel.SetLockedLevel();
+                mainMenuStart.planets[i].GetComponent<MeshRenderer>().enabled = false;
+            }
+            if (i >= 2)
+            {
+                scroolPanel.AddOptionsDropDown();
+            }
             if (i == 0) continue;
             var x = instPans[i - 1].transform.localPosition.x + panPrefab.GetComponent<RectTransform>().sizeDelta.x +
                     panOffset;
@@ -84,7 +102,19 @@ public class SnapScrolling : MonoBehaviour
     public void Scrolling(bool state)
     {
         if (state)
+        {
+            startLevelButton.interactable = false;
             AudioManager.Instance.PlaySwipeAudio();
+        }
+        else
+        {
+            startLevelButton.interactable = true;
+        }
         isScrooling = state;
+    }
+
+    private void OnDestroy()
+    {
+        Settings.OnOpenAllLevels -= Start;
     }
 }

@@ -533,7 +533,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 0
@@ -609,7 +609,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0300d23ab0cd6459fa5ff5e094917ffa, type: 2}
+  - {fileID: 2100000, guid: 8d06af6762553494f8f88e280484dccf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -905,6 +905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 300
   rotationDamping: 1
+  hideTutor: 0
 --- !u!65 &1123327965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1328,7 +1329,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0300d23ab0cd6459fa5ff5e094917ffa, type: 2}
+  - {fileID: 2100000, guid: 8d06af6762553494f8f88e280484dccf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1405,6 +1406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 300
   rotationDamping: 1
+  hideTutor: 0
 --- !u!65 &1945882041
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -8,7 +8,8 @@ public class Menu : MonoBehaviour
 {
     [SerializeField]
     private RectTransform screenCanvas;
-    
+
+    [SerializeField] private Button menuButton;
     [SerializeField] private Image image;
     [SerializeField] private Sprite menuImage;
     [SerializeField] private Sprite cancelImage;
@@ -18,6 +19,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject _newGamePanel;
     [SerializeField] private GameObject _loadGamePanel;
     [SerializeField] private GameObject _settinsPanel;
+    [SerializeField] private GameObject _mainMenuPanel;
     [SerializeField] private GameObject _quitGamePanel;
 
     [Header("ScrollView")]
@@ -32,8 +34,19 @@ public class Menu : MonoBehaviour
     private void Start()
     {
         OnFinishLevel += SeeCongratulationPanel;
+        Level.OnEnd += EndLevel;
     }
 
+    private void EndLevel()
+    {
+        if (_menuPanel.activeSelf)
+            _menuPanel.SetActive(false);
+        image.sprite = menuImage;
+        HideAllInfoPanel();
+        menuButton.interactable = false;
+        StartCoroutine(WaitEndGame());
+    }
+    
     public void MenuButton()
     {
         AudioManager.Instance.PlayPopUpAudio();
@@ -89,9 +102,29 @@ public class Menu : MonoBehaviour
 
     public void MainMenuButton()
     {
+        _mainMenuPanel.SetActive(true);
+    }
+
+    public void ClickYesMainMenu()
+    {
+        HideAllInfoPanel();
         image.sprite = menuImage;
         _menuPanel.SetActive(false);
         SceneController.instance.LoadMenu();
+    }
+
+    public void ClickYesStartNewGame()
+    {
+        GameManager.Instance.StartNewGame();
+        HideAllInfoPanel();
+        image.sprite = menuImage;
+        _menuPanel.SetActive(false);
+        SceneController.instance.LoadMenu();
+    }
+
+    public void ClickNo()
+    {
+        HideAllInfoPanel();
     }
 
     public void QuitButton()
@@ -119,10 +152,17 @@ public class Menu : MonoBehaviour
         }
     }
 
+    
     private void SeeCongratulationPanel()
     {
         var panel = Instantiate(congratulationLabel, screenCanvas);
         Destroy(panel, 5f);
+    }
+
+    private IEnumerator WaitEndGame()
+    {
+        yield return new WaitForSeconds(10f);
+        menuButton.interactable = true;
     }
     
     private void HideAllInfoPanel()
@@ -131,10 +171,12 @@ public class Menu : MonoBehaviour
         _loadGamePanel.SetActive(false);
         _settinsPanel.SetActive(false);
         _quitGamePanel.SetActive(false);
+        _mainMenuPanel.SetActive(false);
     }
 
     private void OnDestroy()
     {
         OnFinishLevel -= SeeCongratulationPanel;
+        Level.OnEnd += EndLevel;
     }
 }

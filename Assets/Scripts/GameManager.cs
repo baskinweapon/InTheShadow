@@ -15,8 +15,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<LevelDataScriptble> levelData;
 
     private float _gameTime;
+    public int levelCount;
 
     public GameState _GameState = GameState.Play;
+    
     
     public static GameManager Instance
     {
@@ -36,7 +38,12 @@ public class GameManager : MonoBehaviour
         else
             DestroyImmediate(this);
     }
-    
+
+    private void Start()
+    {
+        levelCount = levelData.Count;
+    }
+
     private void Update()
     {
         if (_GameState == GameState.Play)
@@ -55,5 +62,17 @@ public class GameManager : MonoBehaviour
         if (id >= 0 && id < levelData.Count)
             return levelData[id];
         return null;
+    }
+
+    public void StartNewGame()
+    {
+        for (int i = 0; i < levelData.Count; i++)
+        {
+            var level = levelData[i];
+            level.dificult = 0;
+            level.score = 0;
+            level.time = 0;
+            level.isOpen = i > 0 ? false : true;
+        }
     }
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c1222e2c256454a8eab88773992b86, type: 3}
   m_Name: FirstLevel
   m_EditorClassIdentifier: 
-  nameLevel: Tutorial
+  nameLevel: WATER
   isOpen: 1
-  time: 12
-  dificult: 1
-  score: 1
+  time: 6.9686937
+  dificult: 0
+  score: 3

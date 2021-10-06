@@ -14,7 +14,7 @@ public class BezierMover : MonoBehaviour
     [Range(0, 1)] public float t;
 
     public float speed = 5f;
-
+    
     public void TransformToCamera()
     {
         _multyply = speed;
