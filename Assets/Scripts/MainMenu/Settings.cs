@@ -11,10 +11,10 @@ public class Settings : MonoBehaviour
     [SerializeField] private TMP_Dropdown resolutionDropdown;
     [SerializeField] private Toggle changeLevelsTogle;
 
-    public static Action OnOpenAllLevels;
-    
+    private Menu menu;
     private void Start()
     {
+        menu = GetComponent<Menu>();
         resolutionDropdown.value = PlayerPrefs.GetInt("Resolution");
         changeLevelsTogle.isOn = PlayerPrefs.GetInt("ChangeLVL") > 0 ? true : false;
         volumeSlider.value = PlayerPrefs.GetFloat("Volume");
@@ -38,29 +38,20 @@ public class Settings : MonoBehaviour
             Screen.SetResolution(3840,2160, FullScreenMode.FullScreenWindow);
         PlayerPrefs.SetInt("Resolution", value);
     }
-
-    private List<bool> saverIsOpen = new List<bool>();
+    
     public void ChangeAllLevel(bool state)
     {
+        AudioManager.Instance.PlayPopUpAudio();
+        PlayerPrefs.SetInt("ChangeLVL", state ? 1 : 0);
         if (state)
         {
-            for (int i = 0; i < GameManager.Instance.levelCount; i++)
-            {
-                var levelData = GameManager.Instance.GetLevelData(i);
-                saverIsOpen.Add(levelData.isOpen);
-                levelData.isOpen = true;
-            }
+            GameManager.Instance.OpenAllLevels();
+            menu.ClickYesMainMenu();
         }
         else
         {
-            for (int i = 0; i < GameManager.Instance.levelCount; i++)
-            {
-                var levelData = GameManager.Instance.GetLevelData(i);
-                levelData.isOpen = saverIsOpen[i];
-            }
-            saverIsOpen.Clear();
+            menu.ClickYesStartNewGame();
         }
-        OnOpenAllLevels?.Invoke();
-        PlayerPrefs.SetInt("ChangeLVL", state ? 1 : 0);
+        
     }
 }

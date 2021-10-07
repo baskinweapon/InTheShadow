@@ -75,4 +75,16 @@ public class GameManager : MonoBehaviour
             level.isOpen = i > 0 ? false : true;
         }
     }
+
+    public void OpenAllLevels()
+    {
+        for (int i = 0; i < levelData.Count; i++)
+        {
+            var level = levelData[i];
+            level.dificult = 0;
+            level.score = 0;
+            level.time = 0;
+            level.isOpen = true;
+        }
+    }
 }

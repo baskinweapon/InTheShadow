@@ -17,3 +17,7 @@ MonoBehaviour:
   time: 6.9686937
   dificult: 0
   score: 3
+  startRotationFirst: {x: -0.53210986, y: -0.7755209, z: -0.30565926, w: -0.14831993}
+  startRotationSecond: {x: 0, y: 0, z: 0, w: 0}
+  saveRotationFirst: {x: 0, y: 0, z: 0, w: 0}
+  saveRotationSecond: {x: 0, y: 0, z: 0, w: 0}

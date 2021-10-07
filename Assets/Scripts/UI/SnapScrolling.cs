@@ -34,11 +34,8 @@ public class SnapScrolling : MonoBehaviour
     private int selectedID;
     private bool isScrooling;
 
-    private void OnEnable()
-    {
-        Settings.OnOpenAllLevels += Start;
-    }
-
+    private int maxUnlockLevel = 6;
+    
     public void Start()
     {
         instPans = new GameObject[panCount];
@@ -57,6 +54,11 @@ public class SnapScrolling : MonoBehaviour
                 scroolPanel.SetLockedLevel();
                 mainMenuStart.planets[i].GetComponent<MeshRenderer>().enabled = false;
             }
+            else
+            {
+                maxUnlockLevel = i;
+            }
+            
             if (i >= 2)
             {
                 scroolPanel.AddOptionsDropDown();
@@ -108,13 +110,10 @@ public class SnapScrolling : MonoBehaviour
         }
         else
         {
-            startLevelButton.interactable = true;
+            if (selectedID <= maxUnlockLevel)
+                startLevelButton.interactable = true;
         }
         isScrooling = state;
     }
-
-    private void OnDestroy()
-    {
-        Settings.OnOpenAllLevels -= Start;
-    }
+    
 }

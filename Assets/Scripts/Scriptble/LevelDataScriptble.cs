@@ -10,4 +10,10 @@ public class LevelDataScriptble : ScriptableObject
     public float time;
     public int dificult;
     public int score;
+
+    public Quaternion startRotationFirst;
+    public Quaternion startRotationSecond;
+
+    public Quaternion saveRotationFirst;
+    public Quaternion saveRotationSecond;
 }
