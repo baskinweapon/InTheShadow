@@ -31,7 +31,7 @@ public class SnapScrolling : MonoBehaviour
 
     private Vector2[] pansScale;
     
-    private int selectedID;
+    private int selectedID = 0;
     private bool isScrooling;
 
     private int maxUnlockLevel = 6;
@@ -70,6 +70,7 @@ public class SnapScrolling : MonoBehaviour
             instPans[i].transform.localPosition = new Vector2(x, y);
             pansPosition[i] = -instPans[i].transform.localPosition;
         }
+        MainMenuStart.OnChooseLvl?.Invoke(selectedID);
     }
 
     private int prevSelectedID = 1;
@@ -85,7 +86,6 @@ public class SnapScrolling : MonoBehaviour
                 selectedID = i;
                 if (prevSelectedID != selectedID)
                 {
-                    MainMenuStart.OnChooseLvl?.Invoke(selectedID);
                     prevSelectedID = selectedID;
                 }
             }
@@ -110,6 +110,7 @@ public class SnapScrolling : MonoBehaviour
         }
         else
         {
+            MainMenuStart.OnChooseLvl?.Invoke(selectedID);
             if (selectedID <= maxUnlockLevel)
                 startLevelButton.interactable = true;
         }

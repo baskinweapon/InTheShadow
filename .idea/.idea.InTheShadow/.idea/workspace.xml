@@ -3,6 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="655fb2c0-8090-469e-b64d-0c4fe09fc867" name="Default Changelist" comment="need fix openAllLevels">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/FourthLvlScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelsScenes/ThirdLvlScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaFor2.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaFor2.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaFor4.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaFor4.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForDeer.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForDeer.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForElephant.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForElephant.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForGlobelBase.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForGlobelBase.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForLoft.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForLoft.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForMainBaloon.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForMainBaloon.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForRoga.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForRoga.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForTeaPot.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual Effects/AlphaForTeaPot.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +44,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/Assets/Scripts/Utils/BezierMover.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/Assets/Scripts/Utils/BezierMover.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/57/1371a208/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/soloh/Desktop/InTheShadow/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/LeaderboardManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../InTheShadow-main/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8805DF07-97D0-49F6-BAB8-1BD3776A1A2C/23/ee7a9e35/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -60,11 +71,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/BezierMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuStart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SnapScrolling.cs" />
     </changedPaths>
   </component>
@@ -83,6 +94,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../InTheShadowGame.app/Contents/MacOS/Shadowmatic" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../InTheShadowGame.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -117,6 +136,7 @@
       <workItem from="1632484701274" duration="997000" />
       <workItem from="1632574761154" duration="33194000" />
       <workItem from="1632914210071" duration="19204000" />
+      <workItem from="1633600569018" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="reimport project">
       <created>1630536712071</created>

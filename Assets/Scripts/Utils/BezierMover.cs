@@ -19,7 +19,7 @@ public class BezierMover : MonoBehaviour
     {
         _multyply = speed;
         StopAllCoroutines();
-        StartCoroutine(CourutineToCamera());
+       StartCoroutine(CourutineToCamera());
     }
 
     public void TransformToStartPosition()
@@ -44,7 +44,7 @@ public class BezierMover : MonoBehaviour
             else
                 t += Time.deltaTime / speed;
 
-            transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
+            transform.position = GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
 
@@ -54,21 +54,32 @@ public class BezierMover : MonoBehaviour
         {
             yield return null;
             t -= Time.deltaTime / speed;
-            transform.position = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, t);
+            transform.position = GetPoint(p0.position, p1.position, p2.position, p3.position, t);
         }
     }
-
-    private void OnDrawGizmos()
+    
+    private static Vector3 GetPoint(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
     {
-        int segmentNumber = 20;
-        Vector3 previosePoint = p0.position;
-
-        for (int i = 0; i < segmentNumber + 1; i++)
-        {
-            float param = (float) i / segmentNumber;
-            Vector3 point = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, param);
-            Gizmos.DrawLine(previosePoint, point);
-            previosePoint = point;
-        }
+        t = Mathf.Clamp01(t);
+        float oneMinusT = 1f - t;
+        return
+            oneMinusT * oneMinusT * oneMinusT * p0 +
+            3f * oneMinusT * oneMinusT * t * p1 +
+            3f * oneMinusT * t * t * p2 +
+            t * t * t * p3;
     }
+
+    // private void OnDrawGizmos()
+    // {
+    //     int segmentNumber = 20;
+    //     Vector3 previosePoint = p0.position;
+    //
+    //     for (int i = 0; i < segmentNumber + 1; i++)
+    //     {
+    //         float param = (float) i / segmentNumber;
+    //         Vector3 point = Bezier.GetPoint(p0.position, p1.position, p2.position, p3.position, param);
+    //         Gizmos.DrawLine(previosePoint, point);
+    //         previosePoint = point;
+    //     }
+    // }
 }
