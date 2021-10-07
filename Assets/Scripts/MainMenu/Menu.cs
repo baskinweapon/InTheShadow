@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -125,6 +126,15 @@ public class Menu : MonoBehaviour
     public void ClickNo()
     {
         HideAllInfoPanel();
+    }
+
+    public void ClickYesExit()
+    {
+        string json = JsonUtility.ToJson(GameManager.Instance.GetLevelData(0));
+        File.Create(Application.dataPath + "/StreamingAssets/Saver/save.txt");
+        File.WriteAllText(Application.dataPath + "/StreamingAssets/Saver/save.txt", json);
+        print(json);
+        Application.Quit();
     }
 
     public void QuitButton()

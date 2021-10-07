@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: SixLevel
   m_EditorClassIdentifier: 
   nameLevel: TAKE OFF
-  isOpen: 1
+  isOpen: 0
   time: 0
   dificult: 0
   score: 0
+  startRotationFirst: {x: 0, y: 0, z: 0, w: 0}
+  startRotationSecond: {x: 0, y: 0, z: 0, w: 0}
+  saveRotationFirst: {x: 0, y: 0, z: 0, w: 0}
+  saveRotationSecond: {x: 0, y: 0, z: 0, w: 0}

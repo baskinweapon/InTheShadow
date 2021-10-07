@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public enum GameState
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        
         levelCount = levelData.Count;
     }
 
@@ -86,5 +88,11 @@ public class GameManager : MonoBehaviour
             level.time = 0;
             level.isOpen = true;
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        string json = JsonUtility.ToJson(levelData);
+        File.WriteAllText(Application.dataPath, json);
     }
 }
