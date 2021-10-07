@@ -130,10 +130,7 @@ public class Menu : MonoBehaviour
 
     public void ClickYesExit()
     {
-        string json = JsonUtility.ToJson(GameManager.Instance.GetLevelData(0));
-        File.Create(Application.dataPath + "/StreamingAssets/Saver/save.txt");
-        File.WriteAllText(Application.dataPath + "/StreamingAssets/Saver/save.txt", json);
-        print(json);
+        GameManager.Instance.WriteFile();
         Application.Quit();
     }
 

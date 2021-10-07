@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="655fb2c0-8090-469e-b64d-0c4fe09fc867" name="Default Changelist" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InTheShadow/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FiveLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/FiveLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ForthLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ForthLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SecondLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SecondLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SixLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/SixLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ThirdLevel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptble/ThirdLevel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +35,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8805DF07-97D0-49F6-BAB8-1BD3776A1A2C/23/ee7a9e35/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/52/6649445b/File.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScrollPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HideCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/DontDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/992585620d64427198ddf3a0e146773313e400/fa/551db77d/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/OverText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HideObjects.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -81,8 +80,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -129,6 +132,7 @@
       <workItem from="1632574761154" duration="33194000" />
       <workItem from="1632914210071" duration="19204000" />
       <workItem from="1633600569018" duration="5214000" />
+      <workItem from="1633614170576" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="reimport project">
       <created>1630536712071</created>
@@ -199,6 +203,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">

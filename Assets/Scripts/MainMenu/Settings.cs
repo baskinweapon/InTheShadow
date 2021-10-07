@@ -17,7 +17,7 @@ public class Settings : MonoBehaviour
         menu = GetComponent<Menu>();
         resolutionDropdown.value = PlayerPrefs.GetInt("Resolution");
         ChangeResolution(resolutionDropdown.value);
-        // changeLevelsTogle.isOn = PlayerPrefs.GetInt("ChangeLVL") > 0 ? true : false;
+        changeLevelsTogle.isOn = PlayerPrefs.GetInt("ChangeLVL") > 0 ? true : false;
         volumeSlider.value = PlayerPrefs.GetFloat("Volume") == 0 ? 0.5f : PlayerPrefs.GetFloat("Volume");
     }
 

@@ -23,10 +23,10 @@ public class ScrollPanel : MonoBehaviour
     [SerializeField] private Sprite starImage;
     [SerializeField] private Sprite yellowStarImage;
 
-    private LevelDataScriptble _levelData;
+    private LevelData _levelData;
     private bool isOpen = false;
 
-    public void SetData(LevelDataScriptble levelData)
+    public void SetData(LevelData levelData)
     {
         isOpen = levelData.isOpen;
         if (!isOpen)

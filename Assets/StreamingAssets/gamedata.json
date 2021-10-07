@@ -1,0 +1,46 @@
+{
+    "Items": [
+        {
+            "nameLevel": "WATER",
+            "isOpen": true,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        },
+        {
+            "nameLevel": "TRUNK",
+            "isOpen": false,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        },
+        {
+            "nameLevel": "LOVE SCHOOL",
+            "isOpen": false,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        },
+        {
+            "nameLevel": "WORLD",
+            "isOpen": false,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        },
+        {
+            "nameLevel": "FOREST",
+            "isOpen": false,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        },
+        {
+            "nameLevel": "TAKE OFF",
+            "isOpen": false,
+            "time": 0.0,
+            "dificult": 0,
+            "score": 0
+        }
+    ]
+}

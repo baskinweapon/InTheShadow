@@ -15,7 +15,7 @@ public class Level : MonoBehaviour
     [SerializeField]
     private float timeTreeStars;
 
-    private LevelDataScriptble _levelData;
+    private LevelData _levelData;
     private bool end = false;
 
     public static Action OnFinishLevel;
@@ -60,8 +60,7 @@ public class Level : MonoBehaviour
     {
         end = true;
     }
-
-    private int count = 0;
+    
     private void WinGame()
     {
         AudioManager.Instance.PlayWinLevelAudio();
@@ -69,7 +68,7 @@ public class Level : MonoBehaviour
         _levelData.time = _levelTime;
         _levelData.score = SetStars();
         var nextLevel = GameManager.Instance.GetLevelData(SceneController.instance.GetLevelID() + 1);
-        if (nextLevel)
+        if (nextLevel != null)
             nextLevel.isOpen = true;
         StartCoroutine(ReturnToMenu());
     }
