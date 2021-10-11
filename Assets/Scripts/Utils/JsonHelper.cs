@@ -4,7 +4,11 @@ using UnityEngine;
 
 public static class SaveDirectory
 {
+#if UNITY_EDITOR
 	public static string Path = Application.dataPath + "/StreamingAssets/gamedata.json";
+#else
+	public static string Path = Application.dataPath + "/Resources/Data/StreamingAssets/gamedata.json";
+#endif
 }
 
 public static class JsonHelper {

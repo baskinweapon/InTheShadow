@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        print(SaveDirectory.Path);
         string json = JsonHelper.ReadJsonFromFile(SaveDirectory.Path);
         if (json != null) _levelData = JsonHelper.FromJson<LevelData>(json);
     }
